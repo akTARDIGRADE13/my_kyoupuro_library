@@ -11,9 +11,7 @@ struct LowLink{
     ord.assign(n,0);
     low.assign(n,0);
     int k = 0;
-    for(int i = 0;i < n;++i){
-      if (!seen[i]) dfs(i,-1,k);
-    }
+    for(int i = 0;i < n;++i) if (!seen[i]) dfs(i,-1,k);
     sort(aps.begin(),aps.end());
     sort(bridges.begin(),bridges.end());
   }
@@ -21,10 +19,14 @@ struct LowLink{
   void dfs(int now,int par,int &k){
     seen[now] = true;
     int count = 0;
+    bool flag = true;
     ord[now] = k++;
     low[now] = ord[now];
     for(int i:G[now]){
-      if (i == par) continue;
+      if (i == par && flag){ 
+        flag = false;
+        continue;
+      }
       if (seen[i]){
         low[now] = min(low[now],ord[i]);
       }else{
