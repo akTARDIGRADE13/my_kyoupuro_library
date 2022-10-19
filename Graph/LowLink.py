@@ -18,10 +18,10 @@ class LowLink:
  
     def dfs(self, now:int, par:int, k:int) -> int:
         self.seen[now] = True
-        count = 0
         self.ord[now] = k
         self.low[now] = k
         k += 1
+        count = 0
         for i in self.G[now]:
             if i == par:
                 continue
