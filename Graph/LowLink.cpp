@@ -3,7 +3,7 @@ using namespace std;
 
 struct LowLink{
   vector<int> aps;
-  vector<P> bridges;
+  vector<pair<int,int>> bridges;
  
   explicit LowLink(int _n,vector<vector<int>> _G): n(_n),G(_G) {
     seen.assign(n,false);
