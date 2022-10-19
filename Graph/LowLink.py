@@ -43,3 +43,8 @@ class LowLink:
  
     def is_aps(self, x:int) -> bool:
         return self.check_aps[x]
+    
+    def is_bridges(self, x:int, y:int) -> bool:
+        if self.ord[x] > self.ord[y]:
+            x,y = y,x
+        return self.ord[x] < self.low[y]

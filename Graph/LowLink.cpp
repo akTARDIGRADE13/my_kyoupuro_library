@@ -42,6 +42,11 @@ struct LowLink{
   bool is_aps(int x){
     return check_aps[x];
   }
+
+  bool is_bridges(int x, int y){
+    if (ord[x]>ord[y]) swap(x,y);
+    return ord[x] < low[y];
+  }
  
   private:
     const int n;
