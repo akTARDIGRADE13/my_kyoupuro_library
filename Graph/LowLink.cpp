@@ -10,6 +10,7 @@ struct LowLink{
     ord.assign(n,0);
     low.assign(n,0);
     check_aps.assign(n,false);
+    int k = 0;
     for(int i = 0;i < n;++i){
       if (!seen[i]) dfs(i,-1,k);
     }
