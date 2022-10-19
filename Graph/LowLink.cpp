@@ -33,11 +33,11 @@ struct LowLink{
         ++count;
         dfs(i,now,k);
         low[now] = min(low[now],low[i]);
-        if (par != 1 && ord[now] <= low[i]) check_aps[now] = true;
+        if (par != -1 && ord[now] <= low[i]) check_aps[now] = true;
         if (ord[now] < low[i]) bridges.emplace_back(min(now,i),max(now,i));
       }
     }
-    if (par == 1 && count >= 2) check_aps[now] = true;
+    if (par == -1 && count >= 2) check_aps[now] = true;
     if (check_aps[now]) aps.push_back(now); 
   }
  

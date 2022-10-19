@@ -64,10 +64,10 @@ struct TwoEdgeConnectedComponents{
         ++count;
         dfs(i,now,k);
         low[now] = min(low[now],low[i]);
-        if (par != 1 && ord[now] <= low[i]) check_aps[now] = true;
+        if (par != -1 && ord[now] <= low[i]) check_aps[now] = true;
       }
     }
-    if (par == 1 && count >= 2) check_aps[now] = true;
+    if (par == -1 && count >= 2) check_aps[now] = true;
   }
  
   bool is_aps(int x){
