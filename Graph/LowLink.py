@@ -1,3 +1,7 @@
+# verified with:
+# https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=7040905#1
+# https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=7040910#1
+
 from typing import List
  
 class LowLink:

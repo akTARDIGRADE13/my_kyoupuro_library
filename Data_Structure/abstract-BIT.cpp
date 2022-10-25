@@ -1,3 +1,9 @@
+// verified with:
+// https://judge.yosupo.jp/submission/103510
+// https://atcoder.jp/contests/arc033/submissions/34688335
+// https://atcoder.jp/contests/abc185/submissions/34685459
+// https://atcoder.jp/contests/chokudai_S001/submissions/34685918
+
 #include<bits/stdc++.h>
 using namespace std;
 

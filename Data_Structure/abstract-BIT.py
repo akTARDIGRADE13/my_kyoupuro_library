@@ -1,3 +1,9 @@
+# verified with:
+# https://judge.yosupo.jp/submission/103516
+# https://atcoder.jp/contests/arc033/submissions/34686189
+# https://atcoder.jp/contests/abc185/submissions/34686226
+# https://atcoder.jp/contests/chokudai_S001/submissions/34686267
+
 # 内部は1-indexだが、関数の引数は0-index
 from typing import TypeVar, Callable
 T = TypeVar("T")

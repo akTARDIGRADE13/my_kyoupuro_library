@@ -1,3 +1,6 @@
+# verified with:
+# https://judge.yosupo.jp/submission/103479
+
 # αはアッカーマンの逆関数
 class UnionFind:
     # コンストラクタ
