@@ -1,3 +1,6 @@
+# verified with:
+# https://judge.yosupo.jp/submission/109020
+
 from typing import List
  
 class TwoEdgeConnectedComponents:

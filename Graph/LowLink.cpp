@@ -1,3 +1,7 @@
+// verified with:
+// https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=7039723#1
+// https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=7039712#1
+
 #include<bits/stdc++.h>
 using namespace std;
 

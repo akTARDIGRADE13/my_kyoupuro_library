@@ -1,3 +1,6 @@
+// verified with:
+// https://judge.yosupo.jp/submission/103478
+
 #include<bits/stdc++.h>
 using namespace std;
 
